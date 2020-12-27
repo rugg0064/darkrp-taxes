@@ -7,8 +7,8 @@ See https://github.com/FPtje/DarkRP
 git clone or download ZIP and extract to the garrysmod/addons/ directory
 ## Configuration
 A few things are confugurable within the sv_incometax.lua file
-## TODO
+## Todo
 Configuration file
 The menu for setting taxes as the mayor is incomplete
-## HELP
+## Help
 Message me on discord Rugg#4267
