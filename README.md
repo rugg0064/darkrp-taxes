@@ -1,6 +1,14 @@
 # DarkRP-Taxes
 An income tax mod for DarkRP
+Takes a proportion from citizens' payday check and gives it to the government
 ## DarkRP 
 See https://github.com/FPtje/DarkRP
 ## Installing the addon
-Clone or Download Zip and extract to the garrysmod/addons/ directory
+git clone or download ZIP and extract to the garrysmod/addons/ directory
+## Configuration
+A few things are confugurable within the sv_incometax.lua file
+## TODO
+Configuration file
+The menu for setting taxes as the mayor is incomplete
+## HELP
+Message me on discord Rugg#4267
