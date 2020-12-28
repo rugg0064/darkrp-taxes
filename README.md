@@ -5,10 +5,13 @@ Takes a proportion from citizens' payday check and gives it to the government
 See https://github.com/FPtje/DarkRP
 ## Installing the addon
 git clone or download ZIP and extract to the garrysmod/addons/ directory
+## Using ingame
+The only interface with the addon is through: 
+console command: "taxrate <number>"
+chat command: "/taxrate <number>"
 ## Configuration
-A few things are confugurable within the sv_incometax.lua file
+Within the /lua/autorun/server/sv_incometax.lua file you can configure the default tax rate as well as the minimum and maximum user-settable rate
 ## Todo
 Configuration file
-The menu for setting taxes as the mayor is incomplete
 ## Help
 Message me on discord Rugg#4267

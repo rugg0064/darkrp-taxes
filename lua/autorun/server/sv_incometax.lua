@@ -1,7 +1,7 @@
 -- Config --
 taxCfg = {}
 taxCfg.defaultRate = 50
-taxCfg.currentRate = 50
+taxCfg.currentRate = taxCfg.defaultRate
 
 taxCfg.rateLimits = {}
 taxCfg.rateLimits.min = 0
