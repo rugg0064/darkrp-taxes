@@ -1,1 +1,1 @@
-print("incometax shared intialized")
+print("shared initialized")
