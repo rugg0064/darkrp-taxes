@@ -6,8 +6,8 @@ See https://github.com/FPtje/DarkRP
 ## Installing the addon
 git clone or download ZIP and extract to the garrysmod/addons/ directory
 ## Using ingame
-The only interface with the addon is through: 
-console command: "taxrate <number>"
+The only interface with the addon is through:\n
+console command: "taxrate <number>"\n
 chat command: "/taxrate <number>"
 ## Configuration
 Within the /lua/autorun/server/sv_incometax.lua file you can configure the default tax rate as well as the minimum and maximum user-settable rate
