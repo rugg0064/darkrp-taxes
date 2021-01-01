@@ -1,11 +1,20 @@
--- Config --
-taxCfg = {}
-taxCfg.defaultRate = 50
-taxCfg.currentRate = taxCfg.defaultRate
+local taxCfg = {}
+if(!file.Exists("taxCfg", "data")) then
+	file.CreateDir("taxCfg")
+end
+if(file.Exists("taxcfg/taxconfig.json", "data")) then
+	taxCfg = util.JSONToTable(file.Read("taxcfg/taxConfig.json"))
+else
+	taxCfg.defaultRate = 50
+	
+	taxCfg.rateLimits = {}
+	taxCfg.rateLimits.min = 0
+	taxCfg.rateLimits.max = 100
 
-taxCfg.rateLimits = {}
-taxCfg.rateLimits.min = 0
-taxCfg.rateLimits.max = 100
+	local jsonData = util.TableToJSON(taxCfg)
+	file.Write("taxcfg/taxconfig.json")
+end
+taxCfg.currentRate = taxCfg.defaultRate
 
 local mayorID = nil
 function setMayorID()
@@ -39,7 +48,6 @@ hook.Add("OnPlayerChangedTeam", "taxJobChange", jobChange)
 
 function removeOnDisconnect(ply)
 	if(ply:isMayor()) then setTaxesToDefault() end
-	removeFromPayable(ply)
 end
 hook.Add("PlayerDisconnected", "taxDisconnect", removeOnDisconnect)
 
