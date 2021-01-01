@@ -8,7 +8,7 @@ git clone or download ZIP and extract to the garrysmod/addons/ directory
 ## Using ingame
 The only interface with the addon is through the console command: "taxrate {number}" and chat command: "/taxrate {number}"
 ## Configuration
-Within the /lua/autorun/server/sv_incometax.lua file you can configure the default tax rate as well as the minimum and maximum user-settable rate
+After starting a server with the addon once a configuration file will be created at garrysmod/data/taxcfg/taxconfig.json where you can change the minimum, maximum, and default tax rates.
 ## Todo
 Configuration file
 ## Help
