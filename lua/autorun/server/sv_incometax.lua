@@ -3,18 +3,17 @@ if(!file.Exists("taxcfg", "data")) then
 	file.CreateDir("taxCfg")
 end
 if(file.Exists("taxcfg/taxconfig.json", "data")) then
-	print("bbbbbbbbbbbbbbbbbbbb")
 	taxCfg = util.JSONToTable(file.Read("taxcfg/taxConfig.json"))
 else
-	print("aaaaaaaaaaaaaaaaa")
 	taxCfg.defaultRate = 50
 	
 	taxCfg.rateLimits = {}
 	taxCfg.rateLimits.min = 0
 	taxCfg.rateLimits.max = 100
 
+	for k,v in pairs(taxCfg) do print(k,v) end
 	local jsonData = util.TableToJSON(taxCfg)
-	file.Write("taxcfg/taxconfig.json")
+	file.Write("taxcfg/taxconfig.json", jsonData)
 end
 taxCfg.currentRate = taxCfg.defaultRate
 
