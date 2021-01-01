@@ -1,10 +1,12 @@
 local taxCfg = {}
-if(!file.Exists("taxCfg", "data")) then
+if(!file.Exists("taxcfg", "data")) then
 	file.CreateDir("taxCfg")
 end
 if(file.Exists("taxcfg/taxconfig.json", "data")) then
+	print("bbbbbbbbbbbbbbbbbbbb")
 	taxCfg = util.JSONToTable(file.Read("taxcfg/taxConfig.json"))
 else
+	print("aaaaaaaaaaaaaaaaa")
 	taxCfg.defaultRate = 50
 	
 	taxCfg.rateLimits = {}

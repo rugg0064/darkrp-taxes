@@ -1,9 +1,0 @@
-{
-	"title"		:	"DarkRP Income Tax",
-	"type"		:	"ServerContent",
-	"tags"		:	[ "roleplay", "realism" ],
-	"ignore"	:
-	[
-		"*.md"
-	]
-}
